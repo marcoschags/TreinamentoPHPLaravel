@@ -26,4 +26,9 @@ class HomeController extends Controller
     {
         return view('home');
     }
+    //Mostrar lista de usuários
+    public function show()
+    {
+        dd(auth()->user()->toArray());
+    }
 }

@@ -18,3 +18,5 @@ Route::get('/', function () {
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+//Mostrar lista de usuários
+Route::get('/show user', 'HomeController@show');
