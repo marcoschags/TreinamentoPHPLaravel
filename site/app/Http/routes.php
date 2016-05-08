@@ -11,12 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
 //Mostrar lista de usuários
 Route::get('/show user', 'HomeController@show');
+
+Route::get('/', function () {
+    return view('welcome');
+});
