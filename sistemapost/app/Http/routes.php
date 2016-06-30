@@ -15,6 +15,7 @@ Route::get('criar-post', function () {
 });
 
 Route::post('criar-post', 'PostController@create');
+Route::get('lista-post', 'PostController@index');
 
 Route::get('/', function () {
     return view('home');
